@@ -12,7 +12,7 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=development
-      - MONGO_URI=mongodb://mongo:27017/myapp
+      - MONGO_URI=mongodb://mongo:27017/ftsports
     command: ["npm", "run", "dev"]
     depends_on:
       - mongo
