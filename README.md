@@ -1,4 +1,4 @@
-# RTS Favorite Teams & Athletes Feature
+# RTS Favorites Teams & Athletes Feature
 
 ## Description
 
