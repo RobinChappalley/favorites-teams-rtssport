@@ -22,7 +22,7 @@ services:
       - ./frontend:/app
       - /app/node_modules  # Ignore node_modules for performance
     ports:
-      - "5173:5173"
+      - "5173:5173  "
     environment:
       - NODE_ENV=development
     command: ["npm", "start"]
