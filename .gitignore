@@ -1,1 +1,6 @@
+# Ignore  npm config.
+/dist
 node_modules
+
+.DS_Store
+.tool-versions
