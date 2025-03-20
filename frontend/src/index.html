@@ -1,12 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RTS Sport favorites</title>
+    <title>RTS Sport</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
-  <script src="/index.js"></script>
   <body>
-    favorites
+    <div class="app-container">
+        <!-- Contenu principal -->
+        <main id="main-content">
+            <!-- Les différentes sections seront chargées ici -->
+            <section id="actualites" class="section active">
+                <h2>Actualités</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="https://picsum.photos/300/200" alt="Actualité">
+                        <h3>Titre de l'actualité</h3>
+                        <p>Description courte de l'actualité...</p>
+                    </article>
+                    <article class="news-card">
+                        <img src="https://picsum.photos/300/200" alt="Actualité">
+                        <h3>Titre de l'actualité</h3>
+                        <p>Description courte de l'actualité...</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="en-direct" class="section">
+                <h2>En Direct</h2>
+                <div class="live-events">
+                    <div class="live-event">
+                        <span class="live-indicator">LIVE</span>
+                        <h3>Match en cours</h3>
+                        <p>Score actuel: 2-1</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="favoris" class="section">
+                <h2>Favoris</h2>
+                <p>Contenu à venir...</p>
+            </section>
+
+            <section id="videos" class="section">
+                <h2>Vidéos</h2>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <img src="https://picsum.photos/300/200" alt="Vidéo">
+                        <h3>Titre de la vidéo</h3>
+                        <span class="duration">2:30</span>
+                    </div>
+                    <div class="video-card">
+                        <img src="https://picsum.photos/300/200" alt="Vidéo">
+                        <h3>Titre de la vidéo</h3>
+                        <span class="duration">1:45</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="resultats" class="section">
+                <h2>Résultats</h2>
+                <div class="results-list">
+                    <div class="result-item">
+                        <div class="teams">
+                            <span>Équipe 1</span>
+                            <span>vs</span>
+                            <span>Équipe 2</span>
+                        </div>
+                        <div class="score">2 - 1</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Navigation -->
+        <nav class="bottom-nav">
+            <a href="#actualites" class="nav-item active" data-section="actualites">
+                <span class="material-icons">article</span>
+                <span>Actualités</span>
+            </a>
+            <a href="#en-direct" class="nav-item" data-section="en-direct">
+                <span class="material-icons">live_tv</span>
+                <span>En Direct</span>
+            </a>
+            <a href="#favoris" class="nav-item" data-section="favoris">
+                <span class="material-icons">favorite</span>
+                <span>Favoris</span>
+            </a>
+            <a href="#videos" class="nav-item" data-section="videos">
+                <span class="material-icons">play_circle</span>
+                <span>Vidéos</span>
+            </a>
+            <a href="#resultats" class="nav-item" data-section="resultats">
+                <span class="material-icons">sports_soccer</span>
+                <span>Résultats</span>
+            </a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

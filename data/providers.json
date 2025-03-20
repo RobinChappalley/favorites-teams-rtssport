@@ -1,0 +1,10 @@
+[
+    {
+      "id": "provider_rts",
+      "name": "RTS"
+    },
+    {
+      "id": "provider_eurosport",
+      "name": "Eurosport"
+    }
+  ]

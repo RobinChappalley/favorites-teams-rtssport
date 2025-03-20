@@ -1,0 +1,14 @@
+[
+    {
+      "id": "sport_f1",
+      "name": "F1"
+    },
+    {
+      "id": "sport_football",
+      "name": "Football"
+    },
+    {
+      "id": "sport_tennis",
+      "name": "Tennis"
+    }
+  ]

@@ -1,0 +1,16 @@
+[
+    {
+      "id": "league_superleague",
+      "name": "Super League",
+      "sport": "sport_football",
+      "country": "Suisse"
+    },
+    {
+      "id": "tournament_doraeve",
+      "name": "Tournoi Doraeve",
+      "sport": "sport_tennis",
+      "category": "ATP 500",
+      "surface": "Dur",
+      "country": "Suisse"
+    }
+  ]

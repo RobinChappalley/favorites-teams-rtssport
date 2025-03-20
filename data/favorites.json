@@ -1,0 +1,25 @@
+{
+    "userId": "user123",
+    "favorites": [
+      {
+        "type": "sport",
+        "id": "sport_f1"
+      },
+      {
+        "type": "sport",
+        "id": "sport_football"
+      },
+      {
+        "type": "sport",
+        "id": "sport_tennis"
+      },
+      {
+        "type": "team",
+        "id": "team_servette"
+      },
+      {
+        "type": "player",
+        "id": "player_doraeve"
+      }
+    ]
+  }

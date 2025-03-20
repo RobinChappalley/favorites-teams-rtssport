@@ -1,0 +1,16 @@
+[
+  {
+    "id": "team_servette",
+    "name": "Servette",
+    "type": "team",
+    "sport": "sport_football",
+    "league": "league_superleague"
+  },
+  {
+    "id": "team_lugano",
+    "name": "Lugano",
+    "type": "team",
+    "sport": "sport_football",
+    "league": "league_superleague"
+  }
+]
