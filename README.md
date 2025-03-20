@@ -12,3 +12,7 @@ Dans le cadre des Hackdays 2025 de la RTS, ce projet a pour objectif de créer u
   - **Lives** : Accès direct aux événements en direct concernant les favoris.
   - **Articles** : Mise en avant des articles pertinents sur les équipes/athlètes favoris.
 - **Personnalisation** : La page se mettra à jour automatiquement en fonction des équipes/athlètes sélectionnés comme favoris par l'utilisateur.
+
+## Figma
+
+ [Maquettes](https://www.figma.com/design/Ho4O2S6fI04IZkE7X6nGjy/Hackdays?node-id=1-2&t=EzMWhnHK0DN0Ye8R-1)
