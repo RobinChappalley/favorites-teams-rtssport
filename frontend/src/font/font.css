@@ -1,0 +1,13 @@
+@font-face {
+  font-family: rts-font-display;
+  src: url("./SRGSSRTypeVF_Display_A_Wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: rts-font-text;
+  src: url("./SRGSSRTypeVF_Text_A_Wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
