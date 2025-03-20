@@ -1,0 +1,52 @@
+[
+  {
+    "id": "event_f1_monaco_2025",
+    "name": "Grand Prix de Monaco",
+    "datetime": "2025-05-25T14:00:00+02:00",
+    "status": "scheduled",
+    "sport": {
+      "id": "sport_f1",
+      "name": "F1"
+    },
+    "venue": "Circuit de Monaco, Monte Carlo"
+  },
+  {
+    "id": "event_football_servette_lugano",
+    "name": "Servette - Lugano",
+    "datetime": "2025-03-18T20:00:00+01:00",
+    "status": "scheduled",
+    "sport": {
+      "id": "sport_football",
+      "name": "Football"
+    },
+    "league": {
+      "id": "league_superleague",
+      "name": "Super League"
+    },
+    "venue": "Stade de Genève",
+    "participants": [
+      {"id": "team_servette", "role": "home"},
+      {"id": "team_lugano", "role": "away"}
+    ]
+  },
+  {
+    "id": "event_tennis_doraeve_nodal",
+    "name": "Doraeve - Nodal",
+    "datetime": "2025-03-19T21:00:00+01:00",
+    "status": "scheduled",
+    "sport": {
+      "id": "sport_tennis",
+      "name": "Tennis"
+    },
+    "tournament": {
+      "id": "tournament_doraeve",
+      "name": "Tournoi Doraeve",
+      "round": "Demi-finale"
+    },
+    "venue": "Centre de Tennis Genève",
+    "participants": [
+      {"id": "player_doraeve", "role": "player1"},
+      {"id": "player_nodal", "role": "player2"}
+    ]
+  }
+]

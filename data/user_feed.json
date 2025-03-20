@@ -1,0 +1,50 @@
+{
+    "userId": "user123",
+    "upcomingEvents": [
+      {
+        "id": "event_football_servette_lugano",
+        "name": "Servette - Lugano",
+        "datetime": "2025-03-18T20:00:00+01:00",
+        "sport": "Football",
+        "league": "Super League",
+        "broadcast": {
+          "provider": "RTS",
+          "channel": "RTS 2",
+          "startTime": "2025-03-18T19:45:00+01:00",
+          "liveUrl": "https://www.rts.ch/play/tv/direct/rts-2"
+        },
+        "favoriteReason": ["Sport favori", "Équipe favorite (Servette)"],
+        "isFeatured": true
+      },
+      {
+        "id": "event_tennis_doraeve_nodal",
+        "name": "Doraeve - Nodal",
+        "datetime": "2025-03-19T21:00:00+01:00",
+        "sport": "Tennis",
+        "tournament": "Tournoi Doraeve",
+        "round": "Demi-finale",
+        "broadcast": {
+          "provider": "Eurosport",
+          "channel": "Eurosport 1",
+          "startTime": "2025-03-19T20:45:00+01:00",
+          "liveUrl": "https://www.eurosport.fr/watch/tennis/live"
+        },
+        "favoriteReason": ["Sport favori", "Joueur favori (Doraeve)"],
+        "isFeatured": true
+      },
+      {
+        "id": "event_f1_monaco_2025",
+        "name": "Grand Prix de Monaco",
+        "datetime": "2025-05-25T14:00:00+02:00",
+        "sport": "F1",
+        "broadcast": {
+          "provider": "RTS",
+          "channel": "RTS Sport",
+          "startTime": "2025-05-25T13:30:00+02:00",
+          "liveUrl": "https://www.rts.ch/play/tv/direct/rts-sport"
+        },
+        "favoriteReason": ["Sport favori"],
+        "isFeatured": true
+      }
+    ]
+  }

@@ -1,0 +1,18 @@
+[
+    {
+      "id": "player_doraeve",
+      "name": "Doraeve",
+      "type": "person",
+      "sport": "sport_tennis",
+      "nationality": "Suisse",
+      "ranking": 12
+    },
+    {
+      "id": "player_nodal",
+      "name": "Nodal",
+      "type": "person",
+      "sport": "sport_tennis",
+      "nationality": "Espagne",
+      "ranking": 8
+    }
+  ]
