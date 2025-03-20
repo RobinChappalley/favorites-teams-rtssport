@@ -12,7 +12,10 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=development
+      - MONGO_URI=mongodb://mongo:27017/ftsports
     command: ["npm", "run", "dev"]
+    depends_on:
+      - mongo
 
   frontend:
     build:
@@ -26,3 +29,14 @@ services:
     environment:
       - NODE_ENV=development
     command: ["npm", "start"]
+
+  mongo:
+    image: mongo:6.0
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
