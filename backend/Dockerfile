@@ -1,12 +1,12 @@
-FROM node:20-alpine
+FROM node:latest
 
 WORKDIR /app
 
-# Install dependencies
-COPY ./package.json ./package-lock.json ./
+# Copy package and lock files first
+COPY ./package*.json ./
 RUN npm install
 
-# Copy the rest of the files
+# Copy the rest of the app
 COPY . .
 
 EXPOSE 3000
