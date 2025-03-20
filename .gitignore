@@ -1,4 +1,4 @@
-# Ignore  npm config.
+# Ignore npm config.
 /dist
 node_modules
 
