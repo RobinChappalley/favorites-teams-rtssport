@@ -15,4 +15,4 @@ RUN chmod +x /app/entrypoint.sh
 EXPOSE 3000
 
 # Use the custom entrypoint
-ENTRYPOINT ["./entrypoint.sh"]
+#ENTRYPOINT ["./entrypoint.sh"]
