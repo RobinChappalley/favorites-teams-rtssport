@@ -8,6 +8,9 @@ export default defineConfig({
     emptyOutDir: true, // Clean the output directory before building
   },
   server: {
+    watch: {
+      usePolling: true,
+    },
     host: true,
   },
 });
