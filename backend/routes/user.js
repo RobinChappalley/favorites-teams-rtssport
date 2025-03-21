@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 
-// GET /api/users/:userId - returns a user based on the custom id field
+// GET /api/user/:userId - returns a user based on the custom id field
 router.get('/:userId', async (req, res) => {
     try {
         const userId = req.params.userId;
