@@ -18,6 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedSection = document.getElementById(sectionId);
         if (selectedSection) {
             selectedSection.classList.add('active');
+            
+            // Si c'est la section des favoris, initialiser son contenu
+            if (sectionId === 'favoris' && typeof loadFavorisContent === 'function') {
+                const userId = 'user123'; // ID utilisateur fixe pour l'exemple
+                if (selectedSection.children.length === 0) {
+                    // La section des favoris est vide, initialisons-la
+                    loadFavorisContent(selectedSection, userId);
+                }
+            }
         }
 
         // Activer le lien de navigation correspondant
@@ -45,4 +54,4 @@ document.addEventListener('DOMContentLoaded', () => {
         const hash = window.location.hash.slice(1) || 'actualites';
         changeSection(hash);
     });
-}); 
+});

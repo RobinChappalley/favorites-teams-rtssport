@@ -1,0 +1,393 @@
+/* Styles spécifiques pour la page des favoris */
+.favoris-header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles des onglets de date */
+.date-tabs {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-scroll {
+    display: flex;
+    min-width: max-content;
+}
+
+.date-tab {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    min-width: 70px;
+    text-align: center;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.date-tab.active {
+    background-color: #fff025;
+    font-weight: bold;
+}
+
+.tab-day {
+    font-size: 0.8rem;
+}
+
+.tab-date {
+    font-size: 0.7rem;
+    color: #666;
+}
+
+/* Filtres par sport */
+.sport-filter {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.sport-btn {
+    padding: 5px 15px;
+    border: none;
+    background: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    white-space: nowrap;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.sport-btn.active {
+    background-color: #fff025;
+    font-weight: bold;
+}
+
+/* Match en direct */
+.live-match {
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.live-badge {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.match-teams {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.match-info {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.match-score {
+    font-weight: bold;
+}
+
+/* Liste des matchs favoris */
+.favorite-matches {
+    padding: 10px 15px;
+}
+
+.match-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.match-time {
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.match-teams-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.flag {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.flag-italy {
+    background-image: linear-gradient(to right, #009246 33.33%, #fff 33.33%, #fff 66.66%, #ce2b37 66.66%);
+}
+
+.flag-germany {
+    background-image: linear-gradient(to bottom, #000 33.33%, #ff0000 33.33%, #ff0000 66.66%, #ffce00 66.66%);
+}
+
+.flag-denmark {
+    background-color: #c8102e;
+    position: relative;
+}
+
+.flag-denmark::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.flag-denmark::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+}
+
+.flag-portugal {
+    background-image: linear-gradient(to right, #006600 65%, #ff0000 35%);
+}
+
+.flag-netherlands {
+    background-image: linear-gradient(to bottom, #ae1c28 33.33%, #fff 33.33%, #fff 66.66%, #21468b 66.66%);
+}
+
+.flag-spain {
+    background-image: linear-gradient(to bottom, #aa151b 25%, #f1bf00 25%, #f1bf00 75%, #aa151b 75%);
+}
+
+.flag-switzerland {
+    background-color: #ff0000;
+    position: relative;
+}
+
+.flag-switzerland::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    clip-path: polygon(0% 42%, 42% 42%, 42% 0%, 58% 0%, 58% 42%, 100% 42%, 100% 58%, 58% 58%, 58% 100%, 42% 100%, 42% 58%, 0% 58%);
+}
+
+.flag-scotland {
+    background-color: #0065bd;
+    position: relative;
+}
+
+.flag-scotland::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, transparent calc(50% - 3px), white calc(50% - 3px), white calc(50% + 3px), transparent calc(50% + 3px));
+}
+
+.flag-scotland::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom left, transparent calc(50% - 3px), white calc(50% - 3px), white calc(50% + 3px), transparent calc(50% + 3px));
+}
+
+.match-favorite {
+    width: 40px;
+    text-align: center;
+}
+
+.favorite-icon {
+    color: #fff025;
+}
+
+/* Page de détails du match */
+.match-details {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.match-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.back-button, .notification-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.match-teams-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 1px;
+}
+
+.team-flag-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.team-flag-container .flag {
+    width: 60px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.team-name {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.match-time-badge {
+    font-weight: bold;
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.match-tabs {
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.match-tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid transparent;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.match-tab.active {
+    border-bottom: 2px solid #ff0000;
+    font-weight: bold;
+}
+
+.match-referee, .match-competition, .match-ranking, .match-stadium, .match-broadcast {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.match-referee h3, .match-competition h3, .match-ranking h3, .match-stadium h3, .match-broadcast h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.referee-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.card-stats {
+    display: flex;
+}
+
+.red-card, .yellow-card {
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 5px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.red-card {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.yellow-card {
+    background-color: #f1c40f;
+    color: black;
+}
+
+.ranking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-ranking {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.team-ranking .flag {
+    width: 40px;
+    height: 30px;
+}
+
+.ranking-separator {
+    color: #999;
+}
+
+.broadcast-channel {
+    display: flex;
+    align-items: center;
+}
+
+.tv-icon {
+    margin-right: 10px;
+}
+
+.loading, .error, .empty-state {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.error {
+    color: #e74c3c;
+}

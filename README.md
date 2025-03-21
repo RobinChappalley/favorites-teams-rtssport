@@ -1,4 +1,4 @@
-# RTS Favorite Teams & Athletes Feature
+# RTS Favorites Teams & Athletes Feature
 
 ## Description
 
@@ -16,3 +16,10 @@ Dans le cadre des Hackdays 2025 de la RTS, ce projet a pour objectif de créer u
 ## Figma
 
  [Maquettes](https://www.figma.com/design/Ho4O2S6fI04IZkE7X6nGjy/Hackdays?node-id=1-2&t=EzMWhnHK0DN0Ye8R-1)
+
+## Docker
+
+Ce projet nécessite docker et utilise docker compose pour manager le frontend et le backend
+
+- **Démarrage de compose** : ```docker compose up --build```
+- **Arret** : CTRL + C
