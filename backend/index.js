@@ -3,6 +3,7 @@ const cors = require('cors');
 const favoritesRoutes = require('./routes/favorites');
 const eventsRoutes = require('./routes/events');
 const userRoutes = require('./routes/users');
+const connectDB = require('./db');
 
 const app = express();
 
