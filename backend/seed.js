@@ -1,13 +1,8 @@
+// backend/seed.js
 const mongoose = require('mongoose');
+const User = require('./models/User');  // Adjust path if needed
 
 const mongoURI = process.env.MONGO_URI || 'mongodb://mongo:27017/ftsports';
-
-const userSchema = new mongoose.Schema({
-    id: { type: String, required: true, unique: true },
-    name: { type: String, required: true },
-});
-
-const User = mongoose.model('User', userSchema);
 
 async function seed() {
     try {
