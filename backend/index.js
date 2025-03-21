@@ -13,6 +13,7 @@ const PORT = process.env.PORT || 3000;
 
 const setupSwaggerDocs = require('./swagger');
 
+
 // Connect to MongoDB
 connectDB()
     .then(() => {
@@ -37,10 +38,10 @@ app.use('/api/user', userRoutes);
  * @openapi
  * /:
  *   get:
- *     summary: Returns a simple hello world
+ *     summary: Returns a simple message
  *     responses:
  *       200:
- *         description: Hello World
+ *         description: API description
  */
 app.get('/', (req, res) => {
   res.json({ message: 'API Favoris Sportifs' });
@@ -52,6 +53,8 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Erreur interne du serveur' });
 });
 
+// Swagger
+setupSwaggerDocs(app);
 // Démarrer le serveur
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
