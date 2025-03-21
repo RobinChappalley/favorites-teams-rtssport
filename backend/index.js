@@ -27,10 +27,12 @@ connectDB()
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// Routes to mocks
 app.use('/api/favorites', favoritesRoutes);
 app.use('/api/events', eventsRoutes);
 app.use('/api/users', usersRoutes);
+
+//Routes to database calls
 app.use('/api/user', userRoutes);
 
 // Route par défaut
