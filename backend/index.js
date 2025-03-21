@@ -3,9 +3,14 @@ const cors = require('cors');
 const favoritesRoutes = require('./routes/favorites');
 const eventsRoutes = require('./routes/events');
 const userRoutes = require('./routes/users');
+const connectDB = require('./db');
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Connect to MongoDB
+connectDB();
 
 // Middleware
 app.use(cors());
