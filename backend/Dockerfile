@@ -11,8 +11,10 @@ COPY . .
 
 # Make the entrypoint script executable
 RUN chmod +x /app/entrypoint.sh
+RUN chmod +x entrypoint.sh
 
 EXPOSE 3000
 
 # Use the custom entrypoint
-#ENTRYPOINT ["./entrypoint.sh"]
+#CMD ["tail", "-f", "/dev/null"]
+ENTRYPOINT ["./entrypoint.sh"]
