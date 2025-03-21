@@ -18,3 +18,4 @@ EXPOSE 3000
 # Use the custom entrypoint
 #CMD ["tail", "-f", "/dev/null"]
 ENTRYPOINT ["./entrypoint.sh"]
+
