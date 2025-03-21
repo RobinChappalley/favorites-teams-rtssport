@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Masquer toutes les sections
         sections.forEach(section => {
             section.classList.remove('active');
+            // Nettoyer le contenu des favoris si on quitte cette section
+            if (section.id === 'favoris') {
+                section.innerHTML = '';
+            }
         });
 
         // Désactiver tous les liens de navigation
@@ -22,10 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Si c'est la section des favoris, initialiser son contenu
             if (sectionId === 'favoris' && typeof loadFavorisContent === 'function') {
                 const userId = 'user123'; // ID utilisateur fixe pour l'exemple
-                if (selectedSection.children.length === 0) {
-                    // La section des favoris est vide, initialisons-la
-                    loadFavorisContent(selectedSection, userId);
-                }
+                loadFavorisContent(selectedSection, userId);
             }
         }
 
