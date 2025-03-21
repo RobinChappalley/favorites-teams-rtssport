@@ -2,7 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const favoritesRoutes = require('./routes/favorites');
 const eventsRoutes = require('./routes/events');
-const userRoutes = require('./routes/users');
+const usersRoutes = require('./routes/users');
+const userRoutes = require('./routes/user');
 const connectDB = require('./db');
 
 const app = express();
@@ -28,7 +29,8 @@ app.use(express.json());
 // Routes
 app.use('/api/favorites', favoritesRoutes);
 app.use('/api/events', eventsRoutes);
-app.use('/api/users', userRoutes);
+app.use('/api/users', usersRoutes);
+app.use('/api/user', userRoutes);
 
 // Route par défaut
 /**
