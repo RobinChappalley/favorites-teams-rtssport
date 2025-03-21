@@ -4,14 +4,15 @@ const favoritesRoutes = require('./routes/favorites');
 const eventsRoutes = require('./routes/events');
 const userRoutes = require('./routes/users');
 
-
-const setupSwaggerDocs = require('./swagger');
 const app = express();
 
 
 const PORT = process.env.PORT || 3000;
 
 const setupSwaggerDocs = require('./swagger');
+
+// Connect to MongoDB
+connectDB();
 
 // Middleware
 app.use(cors());
