@@ -1,12 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const userId = 'user123'; // ID utilisateur fixe pour l'exemple
-    const favorisSection = document.getElementById('favoris');
-    
-    // Chargement des données des favoris
-    loadFavorisContent(favorisSection, userId);
-});
+// Suppression du chargement automatique au DOMContentLoaded
+// Le chargement sera géré uniquement par script.js lors du changement de section
 
 async function loadFavorisContent(container, userId) {
+    console.log('Début loadFavorisContent - container:', container);
+    console.log('État du container HTML avant modification:', container.innerHTML);
+    
     try {
         // Création de la structure HTML
         container.innerHTML = `
@@ -64,6 +62,9 @@ async function loadFavorisContent(container, userId) {
                 </div>
             </div>
         `;
+        
+        console.log('HTML des favoris généré et inséré');
+        console.log('État du container HTML après modification:', container.innerHTML);
         
         // Charger les matchs favoris
         loadFavoriteMatches(userId);
@@ -185,11 +186,11 @@ async function showMatchDetails(eventId) {
         
         const event = await response.json();
         
-        // Construire la page de détails
-        const mainContent = document.getElementById('main-content');
+        // Utiliser la section des favoris au lieu de mainContent
+        const favorisSection = document.getElementById('favoris');
         
         // Sauvegarder le contenu actuel pour pouvoir revenir en arrière
-        const currentContent = mainContent.innerHTML;
+        const currentContent = favorisSection.innerHTML;
         
         // Formater l'heure
         const eventTime = new Date(event.datetime);
@@ -210,7 +211,7 @@ async function showMatchDetails(eventId) {
             team2Flag = getFlagForTeam(team2);
         }
         
-        mainContent.innerHTML = `
+        favorisSection.innerHTML = `
             <div class="match-details">
                 <div class="match-details-header">
                     <button id="back-button" class="back-button">
@@ -292,17 +293,9 @@ async function showMatchDetails(eventId) {
         
         // Ajouter l'écouteur d'événement pour le bouton de retour
         document.getElementById('back-button').addEventListener('click', () => {
-            mainContent.innerHTML = currentContent;
-            // Réactiver les écouteurs d'événements
-            setupEventListeners();
-            
-            // Réactiver les écouteurs pour les cartes de match
-            document.querySelectorAll('.match-card').forEach(card => {
-                card.addEventListener('click', () => {
-                    const eventId = card.getAttribute('data-event-id');
-                    showMatchDetails(eventId);
-                });
-            });
+            // Recharger complètement la section des favoris au lieu de restaurer l'ancien contenu
+            const userId = 'user123';
+            loadFavorisContent(favorisSection, userId);
         });
         
     } catch (error) {
